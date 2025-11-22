@@ -8,6 +8,8 @@ resource "aws_instance" "my_ec2" {
   availability_zone = "eu-north-1a"
   key_name      = "devops-project-swabhav"
 
+  associate_public_ip_address = true
+
   tags = {
     Name = "firststsproject"
   }
